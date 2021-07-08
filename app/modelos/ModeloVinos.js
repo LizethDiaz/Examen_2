@@ -1,0 +1,27 @@
+const mongoose = require('mongoose');
+
+const VinosSchema  = new mongoose.Schema({
+    nombre:{
+        type: String,
+        required:true
+    },
+    codigo:{
+        type: Number,
+        required:true
+    },
+    precio:{
+        type: Number,
+        required: true
+    },
+    existencias:{
+        type: Number,
+        default: 5
+        
+    }
+
+})
+
+
+const Vino =mongoose.model('Vino', VinosSchema);
+
+module.exports = Vino;
