@@ -1,4 +1,5 @@
 const ModeloVinos = require('../modelos/ModeloVinos');
+//
 
 function index(req,res){
     console.log('OK');                                      //ya estamos entrando a la funcion de index(controlador todo)
